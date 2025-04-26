@@ -13,4 +13,4 @@ def translate():
     translated_text = translator.translate(text=Input_text, dest=dest_lang).text
     return render_template('index.html', translated_text=translated_text, languages=LANGUAGES)
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
