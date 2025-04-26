@@ -149,7 +149,7 @@
             </h1></center>
             <textarea rows="5" cols="40" id="inp" name="text" placeholder="Enter your text"></textarea>
             <textarea rows="5" cols="40" id="out" placeholder="Output text appears here" readonly>{{ translated_text if translated_text else '' }}</textarea><br>
-            <label for="lnag">CHOOSE A LANGUAGE</label><br>
+            <label for="lang">CHOOSE A LANGUAGE</label><br>
             <select name="language" id="lang">
                 <option value="" disabled selected hidden>Choose a language</option>
                 {% for code, lang in languages.items() %}
